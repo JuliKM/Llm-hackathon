@@ -17,12 +17,6 @@ st.write("api_key:", st.secrets["api_key"])
 
 # And the root-level secrets are also accessible as environment variables:
 
-import os
-
-st.write(
-    "Has environment variables been set:",
-    os.environ["db_username"] == st.secrets["db_username"],
-)
 
 #Get api_key from env
 import os
