@@ -126,7 +126,7 @@ with features:
     st.header('Pregunta sobre un trámite (ask a question):')
     
     question = st.text_input("Pregunta sobre un tramite (ask a question):", "¿Que pasos debo realizar  para pedir la ciudadania por matrimonio?")
-    context_docs = db.similarity_search(user_input)
+    context_docs = db.similarity_search(question)
     llm = ChatOpenAI(openai_api_key=api_key,temperature=0)
     qa_chain = LLMChain(llm=llm, prompt=prompt)
     result = qa_chain({
