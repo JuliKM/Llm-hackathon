@@ -4,7 +4,7 @@ import streamlit as st
 
 #Get api_key from env
 import os
-api_key = os.environ.get('API_URL')
+api_key = st.secrets["API_KEY"]
 
 from langchain.document_loaders import UnstructuredURLLoader
 
