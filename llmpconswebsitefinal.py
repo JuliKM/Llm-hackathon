@@ -22,11 +22,7 @@ urls = [
 
 loader = UnstructuredURLLoader(urls=urls)
 
-@st.cache_data
-def data_loading(loader):
-    return loader.load()
-
-data = data_loading()
+loader.load()
 
 # Import RecursiveCharacterTextSplitter
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -63,13 +59,9 @@ from langchain.vectorstores import Chroma
 from langchain.embeddings.openai import OpenAIEmbeddings
 
 # Create the mebedding function
-@st.cache_data
-def embed():
-    return OpenAIEmbeddings(openai_api_key= api_key)
+embedding_function = OpenAIEmbeddings(openai_api_key= api_key)
 
-embedding_function = embed()
 # Create a database from the documents and embedding function
-
 db = Chroma.from_documents(documents=documents, embedding=embedding_function, persist_directory="my-embeddings")
 
 # Persist the data to disk
