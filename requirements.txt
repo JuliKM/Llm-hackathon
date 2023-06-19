@@ -5,4 +5,3 @@ unstructured
 openai
 streamlit
 pdf2image
-UnstructuredURLLoader
