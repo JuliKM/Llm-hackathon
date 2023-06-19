@@ -116,6 +116,7 @@ print(result["text"])
 header = st.container()
 features = st.container()
 
+
 with header:
     st.title('Welcome to the Q&A bot for Procedures at the Italian Consulate in Mendoza')
     st.title('Bienvenido al Bot para preguntas sobre trámites en el consulado de Mendoza')
@@ -123,7 +124,8 @@ with header:
 
 with features:
     st.header('Pregunta sobre un trámite (ask a question):')
-    user_input = st.text_input("Pregunta sobre un tramite (ask a question):", "¿Que pasos debo realizar  para pedir la ciudadania por matrimonio?")
+    
+    question = st.text_input("Pregunta sobre un tramite (ask a question):", "¿Que pasos debo realizar  para pedir la ciudadania por matrimonio?")
     context_docs = db.similarity_search(user_input)
     llm = ChatOpenAI(openai_api_key=api_key,temperature=0)
     qa_chain = LLMChain(llm=llm, prompt=prompt)
