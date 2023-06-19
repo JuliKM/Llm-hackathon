@@ -113,8 +113,8 @@ result = qa_chain({
 # Print the result
 print(result["text"])
 
-header = st.beta_container()
-features = st.beta_container()
+header = st.container()
+features = st.container()
 
 with header:
     st.Title('Welcome to the Q&A bot for Procedures at the Italian Consulate in Mendoza')
