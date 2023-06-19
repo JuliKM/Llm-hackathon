@@ -14,7 +14,7 @@ urls = [
     "https://web.archive.org/web/20230619195057/https://consmendoza.esteri.it/consolato_mendoza/resource/doc/2021/06/guida_citt_x_mat.pdf",
     "https://web.archive.org/web/20230601000000*/https://consmendoza.esteri.it/consolato_mendoza/es/i_servizi/per_i_cittadini/cittadinanza/ciudadania-matrimonio-doc.html",
     "https://web.archive.org/web/20230308222154/https://consmendoza.esteri.it/consolato_mendoza/it",
-    "https://docs.google.com/document/d/e/2PACX-1vT8qHba7oGpVWg8FJvToQMgJBGpEib3xyKLHvei_7S2i3Gi5PyFtU6SS7z47AgJQEaNqS0EubNpVYkx/pub
+    "https://docs.google.com/document/d/e/2PACX-1vT8qHba7oGpVWg8FJvToQMgJBGpEib3xyKLHvei_7S2i3Gi5PyFtU6SS7z47AgJQEaNqS0EubNpVYkx/pub",
     ]
 
 loader = UnstructuredURLLoader(urls=urls)
