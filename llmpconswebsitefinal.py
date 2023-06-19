@@ -2,8 +2,6 @@
 #Install necessary libraries
 import streamlit as st
 
-st.write("api_key:", st.secrets["api_key"])
-
 #Get api_key from env
 import os
 api_key = os.environ.get('API_URL')
