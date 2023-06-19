@@ -117,7 +117,7 @@ header = st.container()
 features = st.container()
 
 with header:
-    st.Title('Welcome to the Q&A bot for Procedures at the Italian Consulate in Mendoza')
+    st.title('Welcome to the Q&A bot for Procedures at the Italian Consulate in Mendoza')
 
 with features:
     st.header('Pregunta sobre un tramite (ask a question):')
