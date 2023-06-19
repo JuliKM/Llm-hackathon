@@ -22,7 +22,7 @@ urls = [
 
 loader = UnstructuredURLLoader(urls=urls)
 
-loader.load()
+data = loader.load()
 
 # Import RecursiveCharacterTextSplitter
 from langchain.text_splitter import RecursiveCharacterTextSplitter
