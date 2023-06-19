@@ -3,5 +3,4 @@ chromadb
 tiktoken
 unstructured
 openai
-streamlit
 pdf2image
