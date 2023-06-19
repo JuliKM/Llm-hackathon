@@ -74,7 +74,7 @@ from langchain.chains.llm import LLMChain
 from langchain.chat_models import ChatOpenAI
 
 # Set the question variable
-question = "¿Cual es el handle de twitter del consulado de italia en mendoza?"
+#question = "¿Cual es el handle de twitter del consulado de italia en mendoza?"
 #question = "¿Quando sono i proximi appuntamenti per cittadinanza del consolato d' italia en mendoza?"
 #question = "Que pasos debo realizar  para pedir la ciudadania por matrimonio? ¿Puedes ponerlo en una lista en viñetas?"
 #question = "Que requisitos debo cumplir  para pedir la ciudadania por matrimonio? ¿Puedes ponerlo en una lista en viñetas?"
