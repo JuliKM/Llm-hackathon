@@ -18,7 +18,6 @@ urls = [
     "https://consmendoza.esteri.it/consolato_mendoza/it/la_comunicazione/dal_consolato/2023/06/prenot-mi-appuntamenti-anagrafe_14.html",
     "https://consmendoza.esteri.it/consolato_mendoza/it/la_comunicazione/dal_consolato/",
     "https://consmendoza.esteri.it/consolato_mendoza/es",
-    "https://consmendoza.esteri.it/consolato_mendoza/resource/img/2023/05/tabella_tariffe_consolari_maggio_2023.pdf",
     ]
 
 loader = UnstructuredURLLoader(urls=urls)
