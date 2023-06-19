@@ -74,6 +74,7 @@ from langchain.chains.llm import LLMChain
 from langchain.chat_models import ChatOpenAI
 
 # Set the question variable
+question = "¿Que pasos debo realizar para pedir la ciudadania por matrimonio?"
 #question = "¿Cual es el handle de twitter del consulado de italia en mendoza?"
 #question = "¿Quando sono i proximi appuntamenti per cittadinanza del consolato d' italia en mendoza?"
 #question = "Que pasos debo realizar  para pedir la ciudadania por matrimonio? ¿Puedes ponerlo en una lista en viñetas?"
@@ -118,9 +119,11 @@ features = st.container()
 
 with header:
     st.title('Welcome to the Q&A bot for Procedures at the Italian Consulate in Mendoza')
+    st.title('Bienvenido al Bot para preguntas sobre trámites en el consulado de Mendoza')
+
 
 with features:
-    st.header('Pregunta sobre un tramite (ask a question):')
+    st.header('Pregunta sobre un trámite (ask a question):')
     user_input = st.text_input("Pregunta sobre un tramite (ask a question):", "¿Que pasos debo realizar  para pedir la ciudadania por matrimonio?")
     context_docs = db.similarity_search(user_input)
     llm = ChatOpenAI(openai_api_key=api_key,temperature=0)
